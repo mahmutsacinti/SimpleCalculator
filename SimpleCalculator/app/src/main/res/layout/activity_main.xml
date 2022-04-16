@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enternumber1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Enter number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/enternumber2"
+        app:layout_constraintEnd_toEndOf="@+id/enternumber2"
+        app:layout_constraintStart_toStartOf="@+id/enternumber2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enternumber2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="Enter number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enternumber1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="116dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enternumber2">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="66dp"
+            android:layout_height="39dp"
+            android:onClick="Toplam"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="66dp"
+            android:layout_height="39dp"
+            android:onClick="Cıkarma"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="66dp"
+            android:layout_height="39dp"
+            android:onClick="Bolme"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="66dp"
+            android:layout_height="39dp"
+            android:onClick="Carp"
+            android:text="*" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
